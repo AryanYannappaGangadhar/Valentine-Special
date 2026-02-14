@@ -1,6 +1,6 @@
 /* PASSWORD */
 function unlock() {
-  if (password.value === "123") {
+  if (password.value === "I Love You") {
     lockScreen.style.display = "none";
     mainContent.style.display = "block";
     startTyping();
@@ -113,3 +113,4 @@ const closePopupBtn = document.getElementById("closePopupBtn");
 const surprisePopup = document.getElementById("surprisePopup");
 if (closePopupBtn) closePopupBtn.onclick = () => surprisePopup.classList.remove("show");
 if (surprisePopup) surprisePopup.addEventListener("click", e => { if (e.target === surprisePopup) surprisePopup.classList.remove("show"); });
+
