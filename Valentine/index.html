@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My BEBE ❤️</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="lockScreen">
+  <h1>Only For You My Bebe ❤️</h1>
+  <p>Enter our secret</p>
+  <input type="password" id="password" placeholder="💖">
+  <button onclick="unlock()">Unlock</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="mainContent">
+
+<audio id="bgAudio" src="music/Love.mp3" loop preload="auto"></audio>
+
+<section class="hero">
+  <h1>Happy Valentine’s Day 💘</h1>
+  <p>You are my forever</p>
+  <button onclick="scrollDown()">Begin Our Story 💕</button>
+</section>
+
+<section class="story">
+  <h2>Our Journey 📖</h2>
+  <p>
+    From the moment I met you, my world changed.  
+    Every smile, every laugh, every moment with you is magic ✨
+    You Are The Best Girl I Ever Had ❤️ In My Life 💕
+    No matter what life throws at you, I Will always stand by You.
+    And I Will always be with You, no matter what. 
+    You are my everything, and I will always be with you.
+    Thank you for being my everything, and for always being there for me.
+    </p>
+</section>
+
+<!-- PHOTO SLIDESHOW -->
+<section class="slideshow">
+  <h2>Our Memories 📸</h2>
+  <div class="slider">
+    <img src="Image/pic1.jpg" class="slide active">
+    <img src="Image/pic2.jpg" class="slide">
+    <img src="Image/pic3.jpeg" class="slide">
+    <img src="Image/pic4.jpeg" class="slide">
+    <img src="Image/pic5.jpeg" class="slide">
+    <img src="Image/pic6.jpeg" class="slide">
+    <img src="Image/pic7.jpeg" class="slide">
+    <img src="Image/pic8.jpeg" class="slide">
+    <img src="Image/pic9.jpeg" class="slide">
+    <img src="Image/pic10.jpeg" class="slide">
+    <img src="Image/pic11.jpeg" class="slide">
+  </div>
+</section>
+
+<!-- VIDEO SLIDESHOW -->
+<section class="videoSection">
+  <h2>Our Moments 🎥</h2>
+  <video id="videoPlayer" muted autoplay controls playsinline preload="metadata"></video>
+</section>
+
+<!-- TYPING LETTER -->
+<section class="letter">
+  <h2>My Love Letter 💌</h2>
+  <p id="typingText">
+My Love,
+
+I don’t know when it happened exactly, but somewhere between our conversations, your smile, and the way you exist so effortlessly, you became my favorite part of every day. Loving you feels natural, like breathing—something my heart does without being asked.
+
+You have this beautiful way of making the world softer for me. When I’m with you, worries feel smaller, time feels kinder, and everything makes a little more sense. Your laughter is my comfort, your voice is my calm, and your presence feels like home.
+
+I admire you more than words can explain—your strength, your kindness, the way you care so deeply. You inspire me to be better, to love harder, and to dream bigger. You make me believe in things I never thought I deserved.
+
+I want you to know that I choose you, every single day. In the happy moments, the quiet ones, and even the difficult times, I want to walk beside you. I don’t promise perfection, but I promise honesty, effort, loyalty, and a love that grows stronger with time.
+
+Thank you for being you, for loving me the way you do, and for holding a place in your heart for me. My heart is yours—today, tomorrow, and always.
+
+Forever yours,
+❤️
+
+  </p>
+</section>
+
+<!-- SURPRISE -->
+<section class="surprise">
+  <button onclick="surprise()">One Last Surprise 🎁</button>
+  <h2 id="finalMsg">You walked into my life and quietly became my forever.
+Every smile of yours feels like a reason, every moment with you feels like home.
+Loving you is the easiest and most beautiful thing I’ve ever done.
+No matter where life takes us, my heart will always choose you.
+This is me, pouring my heart out—today, tomorrow, always. 💖 </h2>
+</section>
+
+</div>
+
+<!-- EFFECTS -->
+<div class="hearts"></div>
+<canvas id="fireworks"></canvas>
+
+<div id="surprisePopup" class="popup">
+  <div class="popup-inner">
+    <div class="hearts-row">
+      <span class="big-heart">❤️</span>
+      <span class="big-heart">❤️</span>
+    </div>
+    <h2 id="popupMsg"> </h2>
+    <button id="closePopupBtn">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
